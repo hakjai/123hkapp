@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/markerTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Marker Title"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/markerDescription"
+        android:layout_below="@+id/markerTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Description / Remarks"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/markerImage"
+        android:src="@mipmap/ic_image"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/markerDescription"
+        android:layout_alignEnd="@+id/markerDescription"
+        android:layout_alignStart="@+id/markerDescription"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/marker_save"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/markerImage"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+
+
